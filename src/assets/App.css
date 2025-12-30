@@ -1,0 +1,108 @@
+/* region General setting*/
+:root {
+  --neon-green: #00ff41;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*endregion*/
+
+/*region Logo setting*/
+.logo {
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(59, 161, 43, 0.67));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 251, 246, 0.67));
+}
+/*endregion*/
+
+/*region Header setting*/
+.global-scoreboard {
+  background: #0a0a0a;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  border: #00ff41 double 5px;
+  border-radius: 1rem;
+  width: 80%;
+}
+.scoreboard-header {
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.stat-box {
+  background: #111;
+  padding: 1rem;
+  border-left: 4px solid #00ff41;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 0.6rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.value {
+  font-family: 'Courier New', monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff41;
+  margin: 0.2rem 0;
+}
+.sub-label {
+  font-size: 0.6rem;
+  color: #444;
+  font-style: italic;
+}
+/*endregion*/
+
+/*region streaks setting*/
+.streaks {
+  background: #0a0a0a;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  border: #00ff41 double 5px;
+  border-radius: 1rem;
+  width: 80%;
+  height: 90vh;
+}
+/*endregion*/
